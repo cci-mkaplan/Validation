@@ -1,0 +1,22 @@
+{
+  "version": 2,
+  "dgSpecHash": "aHLUrvBpbG2OCFaQqd+OQG51NZkZnmsRMydmk04b8Ec4+Makxk0vuAkZKiERXXCfQ5J0u0GBvC+WAZJfTf2qUA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\mkaplanCCI\\Desktop\\ValidationV4\\ValidationV4\\ValidationV4.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\mkaplanCCI\\.nuget\\packages\\communitytoolkit.mvvm\\8.2.2\\communitytoolkit.mvvm.8.2.2.nupkg.sha512",
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages\\microsoft.windows.sdk.buildtools\\10.0.22621.755\\microsoft.windows.sdk.buildtools.10.0.22621.755.nupkg.sha512",
+    "C:\\Users\\mkaplanCCI\\.nuget\\packages\\microsoft.windowsappsdk\\1.3.230602002\\microsoft.windowsappsdk.1.3.230602002.nupkg.sha512",
+    "C:\\Users\\mkaplanCCI\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x86\\6.0.15\\microsoft.netcore.app.runtime.win-x86.6.0.15.nupkg.sha512",
+    "C:\\Users\\mkaplanCCI\\.nuget\\packages\\microsoft.windows.sdk.net.ref\\10.0.19041.28\\microsoft.windows.sdk.net.ref.10.0.19041.28.nupkg.sha512",
+    "C:\\Users\\mkaplanCCI\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x86\\6.0.15\\microsoft.aspnetcore.app.runtime.win-x86.6.0.15.nupkg.sha512",
+    "C:\\Users\\mkaplanCCI\\.nuget\\packages\\microsoft.netcore.app.runtime.win-arm64\\6.0.15\\microsoft.netcore.app.runtime.win-arm64.6.0.15.nupkg.sha512",
+    "C:\\Users\\mkaplanCCI\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x64\\6.0.15\\microsoft.aspnetcore.app.runtime.win-x64.6.0.15.nupkg.sha512",
+    "C:\\Users\\mkaplanCCI\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-arm64\\6.0.15\\microsoft.windowsdesktop.app.runtime.win-arm64.6.0.15.nupkg.sha512",
+    "C:\\Users\\mkaplanCCI\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x64\\6.0.15\\microsoft.windowsdesktop.app.runtime.win-x64.6.0.15.nupkg.sha512",
+    "C:\\Users\\mkaplanCCI\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-arm64\\6.0.15\\microsoft.aspnetcore.app.runtime.win-arm64.6.0.15.nupkg.sha512",
+    "C:\\Users\\mkaplanCCI\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x64\\6.0.15\\microsoft.netcore.app.runtime.win-x64.6.0.15.nupkg.sha512",
+    "C:\\Users\\mkaplanCCI\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x86\\6.0.15\\microsoft.windowsdesktop.app.runtime.win-x86.6.0.15.nupkg.sha512"
+  ],
+  "logs": []
+}
