@@ -12,11 +12,11 @@
     d:DataContext="{d:DesignInstance Type=local:UserInfoViewModel}"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Page.Resources>
+    <!--<Page.Resources>
         <DataTemplate x:Key="ErrorTemplate">
             <TextBlock Foreground="Red" Text="{Binding}" />
         </DataTemplate>
-    </Page.Resources>
+    </Page.Resources>-->
 
     <StackPanel Orientation="Vertical">
         <StackPanel Orientation="Horizontal">

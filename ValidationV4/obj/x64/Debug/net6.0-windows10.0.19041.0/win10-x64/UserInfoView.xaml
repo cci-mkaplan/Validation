@@ -12,32 +12,32 @@
     d:DataContext="{d:DesignInstance Type=local:UserInfoViewModel}"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Page.Resources>
+    <!--<Page.Resources>
         <DataTemplate x:Key="ErrorTemplate">
             <TextBlock Foreground="Red" Text="{Binding}" />
         </DataTemplate>
-    </Page.Resources>
+    </Page.Resources>-->
 
     <StackPanel Orientation="Vertical">
         <StackPanel Orientation="Horizontal">
-            <TextBox x:ConnectionId='5' x:Name="NameTextBox"                                                                                 
+            <TextBox x:ConnectionId='4' x:Name="NameTextBox"                                                                                 
               PlaceholderText="Name"
               Margin="0 0 0 8" 
                                                                          
               attached:Validation.ValidationPropertyName="Name"/>
-            <SymbolIcon x:ConnectionId='6'  Visibility="{Binding Path=(attached:Validation.Errors) ,  
+            <SymbolIcon x:ConnectionId='5'  Visibility="{Binding Path=(attached:Validation.Errors) ,  
                         ElementName=NameTextBox, Converter={StaticResource BoolToVisibilityConverter}}" x:Name="ErrorIcon" Symbol="Important" Foreground="Red" HorizontalAlignment="Right" VerticalAlignment="Center" x:Load="True"
                          ToolTipService.ToolTip="{Binding Path=(attached:Validation.Errors), ElementName=NameTextBox, Converter={StaticResource ErrorsToStringConverter}}">
             </SymbolIcon>
         </StackPanel>
         <StackPanel Orientation="Horizontal">
-            <TextBox x:ConnectionId='3' x:Name="EmailTextBox"                                                                                  
+            <TextBox x:ConnectionId='2' x:Name="EmailTextBox"                                                                                  
               PlaceholderText="Email"
               Margin="0 0 0 8" 
                                                                          
               attached:Validation.ValidationPropertyName="Email"/>
 
-            <SymbolIcon x:ConnectionId='4'  Visibility="{Binding Path=(attached:Validation.Errors) ,  
+            <SymbolIcon x:ConnectionId='3'  Visibility="{Binding Path=(attached:Validation.Errors) ,  
                         ElementName=EmailTextBox, Converter={StaticResource BoolToVisibilityConverter}}" x:Name="ErrorIcon2" Symbol="Important" Foreground="Red" HorizontalAlignment="Right" VerticalAlignment="Center" x:Load="True"
                          ToolTipService.ToolTip="{Binding Path=(attached:Validation.Errors), ElementName=EmailTextBox, Converter={StaticResource ErrorsToStringConverter}}">
             </SymbolIcon>

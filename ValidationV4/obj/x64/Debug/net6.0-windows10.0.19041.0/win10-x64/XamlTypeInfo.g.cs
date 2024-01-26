@@ -224,7 +224,7 @@ namespace ValidationV4.ValidationV4_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[16];
+            _typeNameTable = new string[17];
             _typeNameTable[0] = "Microsoft.UI.Xaml.Controls.XamlControlsResources";
             _typeNameTable[1] = "Microsoft.UI.Xaml.ResourceDictionary";
             _typeNameTable[2] = "Object";
@@ -235,14 +235,15 @@ namespace ValidationV4.ValidationV4_XamlTypeInfo
             _typeNameTable[7] = "Microsoft.UI.Xaml.Window";
             _typeNameTable[8] = "ValidationV4.Attached.Validation";
             _typeNameTable[9] = "Microsoft.UI.Xaml.DependencyObject";
-            _typeNameTable[10] = "System.ComponentModel.INotifyDataErrorInfo";
-            _typeNameTable[11] = "String";
-            _typeNameTable[12] = "System.Collections.IEnumerable";
-            _typeNameTable[13] = "ValidationV4.UserInfoView";
-            _typeNameTable[14] = "Microsoft.UI.Xaml.Controls.Page";
-            _typeNameTable[15] = "Microsoft.UI.Xaml.Controls.UserControl";
+            _typeNameTable[10] = "CommunityToolkit.Mvvm.ComponentModel.ObservableValidator";
+            _typeNameTable[11] = "CommunityToolkit.Mvvm.ComponentModel.ObservableObject";
+            _typeNameTable[12] = "String";
+            _typeNameTable[13] = "System.Collections.IEnumerable";
+            _typeNameTable[14] = "ValidationV4.UserInfoView";
+            _typeNameTable[15] = "Microsoft.UI.Xaml.Controls.Page";
+            _typeNameTable[16] = "Microsoft.UI.Xaml.Controls.UserControl";
 
-            _typeTable = new global::System.Type[16];
+            _typeTable = new global::System.Type[17];
             _typeTable[0] = typeof(global::Microsoft.UI.Xaml.Controls.XamlControlsResources);
             _typeTable[1] = typeof(global::Microsoft.UI.Xaml.ResourceDictionary);
             _typeTable[2] = typeof(global::System.Object);
@@ -253,12 +254,13 @@ namespace ValidationV4.ValidationV4_XamlTypeInfo
             _typeTable[7] = typeof(global::Microsoft.UI.Xaml.Window);
             _typeTable[8] = typeof(global::ValidationV4.Attached.Validation);
             _typeTable[9] = typeof(global::Microsoft.UI.Xaml.DependencyObject);
-            _typeTable[10] = typeof(global::System.ComponentModel.INotifyDataErrorInfo);
-            _typeTable[11] = typeof(global::System.String);
-            _typeTable[12] = typeof(global::System.Collections.IEnumerable);
-            _typeTable[13] = typeof(global::ValidationV4.UserInfoView);
-            _typeTable[14] = typeof(global::Microsoft.UI.Xaml.Controls.Page);
-            _typeTable[15] = typeof(global::Microsoft.UI.Xaml.Controls.UserControl);
+            _typeTable[10] = typeof(global::CommunityToolkit.Mvvm.ComponentModel.ObservableValidator);
+            _typeTable[11] = typeof(global::CommunityToolkit.Mvvm.ComponentModel.ObservableObject);
+            _typeTable[12] = typeof(global::System.String);
+            _typeTable[13] = typeof(global::System.Collections.IEnumerable);
+            _typeTable[14] = typeof(global::ValidationV4.UserInfoView);
+            _typeTable[15] = typeof(global::Microsoft.UI.Xaml.Controls.Page);
+            _typeTable[16] = typeof(global::Microsoft.UI.Xaml.Controls.UserControl);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -298,7 +300,7 @@ namespace ValidationV4.ValidationV4_XamlTypeInfo
         private object Activate_5_ErrorsToStringConverter() { return new global::ValidationV4.Converters.ErrorsToStringConverter(); }
         private object Activate_6_MainWindow() { return new global::ValidationV4.MainWindow(); }
         private object Activate_8_Validation() { return new global::ValidationV4.Attached.Validation(); }
-        private object Activate_13_UserInfoView() { return new global::ValidationV4.UserInfoView(); }
+        private object Activate_14_UserInfoView() { return new global::ValidationV4.UserInfoView(); }
         private void MapAdd_0_XamlControlsResources(object instance, object key, object item)
         {
             var collection = (global::System.Collections.Generic.IDictionary<global::System.Object, global::System.Object>)instance;
@@ -376,34 +378,39 @@ namespace ValidationV4.ValidationV4_XamlTypeInfo
                 xamlType = new global::ValidationV4.ValidationV4_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 10:   //  System.ComponentModel.INotifyDataErrorInfo
-                userType = new global::ValidationV4.ValidationV4_XamlTypeInfo.XamlUserType(this, typeName, type, null);
+            case 10:   //  CommunityToolkit.Mvvm.ComponentModel.ObservableValidator
+                userType = new global::ValidationV4.ValidationV4_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("CommunityToolkit.Mvvm.ComponentModel.ObservableObject"));
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 11:   //  String
+            case 11:   //  CommunityToolkit.Mvvm.ComponentModel.ObservableObject
+                userType = new global::ValidationV4.ValidationV4_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                xamlType = userType;
+                break;
+
+            case 12:   //  String
                 xamlType = new global::ValidationV4.ValidationV4_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 12:   //  System.Collections.IEnumerable
+            case 13:   //  System.Collections.IEnumerable
                 userType = new global::ValidationV4.ValidationV4_XamlTypeInfo.XamlUserType(this, typeName, type, null);
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 13:   //  ValidationV4.UserInfoView
+            case 14:   //  ValidationV4.UserInfoView
                 userType = new global::ValidationV4.ValidationV4_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_13_UserInfoView;
+                userType.Activator = Activate_14_UserInfoView;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 14:   //  Microsoft.UI.Xaml.Controls.Page
+            case 15:   //  Microsoft.UI.Xaml.Controls.Page
                 xamlType = new global::ValidationV4.ValidationV4_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 15:   //  Microsoft.UI.Xaml.Controls.UserControl
+            case 16:   //  Microsoft.UI.Xaml.Controls.UserControl
                 xamlType = new global::ValidationV4.ValidationV4_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
             }
@@ -481,7 +488,7 @@ namespace ValidationV4.ValidationV4_XamlTypeInfo
         }
         private void set_1_Validation_ValidationProvider(object instance, object Value)
         {
-            global::ValidationV4.Attached.Validation.SetValidationProvider((global::Microsoft.UI.Xaml.DependencyObject)instance, (global::System.ComponentModel.INotifyDataErrorInfo)Value);
+            global::ValidationV4.Attached.Validation.SetValidationProvider((global::Microsoft.UI.Xaml.DependencyObject)instance, (global::CommunityToolkit.Mvvm.ComponentModel.ObservableValidator)Value);
         }
         private object get_2_Validation_ValidationPropertyName(object instance)
         {
@@ -516,7 +523,7 @@ namespace ValidationV4.ValidationV4_XamlTypeInfo
                 break;
             case "ValidationV4.Attached.Validation.ValidationProvider":
                 userType = (global::ValidationV4.ValidationV4_XamlTypeInfo.XamlUserType)GetXamlTypeByName("ValidationV4.Attached.Validation");
-                xamlMember = new global::ValidationV4.ValidationV4_XamlTypeInfo.XamlMember(this, "ValidationProvider", "System.ComponentModel.INotifyDataErrorInfo");
+                xamlMember = new global::ValidationV4.ValidationV4_XamlTypeInfo.XamlMember(this, "ValidationProvider", "CommunityToolkit.Mvvm.ComponentModel.ObservableValidator");
                 xamlMember.SetTargetTypeName("Microsoft.UI.Xaml.DependencyObject");
                 xamlMember.SetIsDependencyProperty();
                 xamlMember.SetIsAttachable();

@@ -1,13 +1,15 @@
-﻿using Microsoft.UI.Xaml;
+﻿using CommunityToolkit.Mvvm.ComponentModel;
+using Microsoft.UI.Xaml;
 using System.Collections;
 using System.ComponentModel;
+using ValidationV4.Extensions;
 
 namespace ValidationV4.Attached
 {
     public sealed class Validation : DependencyObject
     {
         public static readonly DependencyProperty ValidationProviderProperty
-            = DependencyProperty.RegisterAttached("ValidationProvider", typeof(INotifyDataErrorInfo),
+            = DependencyProperty.RegisterAttached("ValidationProvider", typeof(ObservableValidator),
                 typeof(Validation), new(null, OnValidationProviderChanged));
 
         public static readonly DependencyProperty ValidationPropertyNameProperty
@@ -30,15 +32,15 @@ namespace ValidationV4.Attached
             => obj.SetValue(ErrorsProperty, errors);
 
 
-        public static INotifyDataErrorInfo GetValidationProvider(DependencyObject obj)
-            => (INotifyDataErrorInfo)obj.GetValue(ValidationProviderProperty);
-        public static void SetValidationProvider(DependencyObject obj, INotifyDataErrorInfo value)
+        public static ObservableValidator GetValidationProvider(DependencyObject obj)
+            => (ObservableValidator)obj.GetValue(ValidationProviderProperty);
+        public static void SetValidationProvider(DependencyObject obj, ObservableValidator value)
             => obj.SetValue(ValidationProviderProperty, value);
 
         private static void OnValidationProviderChanged(DependencyObject sender, DependencyPropertyChangedEventArgs args)
         {
             sender.SetValue(ErrorsProperty, null);
-            if (args.NewValue is INotifyDataErrorInfo info)
+            if (args.NewValue is ObservableValidator info)
             {
                 string propName = GetValidationPropertyName(sender);
                 if (!string.IsNullOrEmpty(propName))
@@ -46,10 +48,10 @@ namespace ValidationV4.Attached
                     info.ErrorsChanged += (source, eventArgs) =>
                     {
                         if (eventArgs.PropertyName == propName)
-                            sender.SetValue(ErrorsProperty, info.GetErrors(propName));
+                            sender.SetValue(ErrorsProperty, info.GetFormattedErrors(propName));
                     };
 
-                    sender.SetValue(ErrorsProperty, info.GetErrors(propName));
+                    sender.SetValue(ErrorsProperty, info.GetFormattedErrors(propName));
                 }
             }
         }

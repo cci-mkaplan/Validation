@@ -365,7 +365,6 @@ namespace ValidationV4.ValidationV4_XamlTypeInfo
             case 8:   //  ValidationV4.Attached.Validation
                 userType = new global::ValidationV4.ValidationV4_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.DependencyObject"));
                 userType.Activator = Activate_8_Validation;
-                userType.AddMemberName("ErrorTemplate");
                 userType.AddMemberName("ValidationProvider");
                 userType.AddMemberName("ValidationPropertyName");
                 userType.AddMemberName("Errors");
@@ -476,35 +475,27 @@ namespace ValidationV4.ValidationV4_XamlTypeInfo
             var that = (global::Microsoft.UI.Xaml.Controls.XamlControlsResources)instance;
             that.UseCompactResources = (global::System.Boolean)Value;
         }
-        private object get_1_Validation_ErrorTemplate(object instance)
-        {
-            return global::ValidationV4.Attached.Validation.GetErrorTemplate((global::Microsoft.UI.Xaml.DependencyObject)instance);
-        }
-        private void set_1_Validation_ErrorTemplate(object instance, object Value)
-        {
-            global::ValidationV4.Attached.Validation.SetErrorTemplate((global::Microsoft.UI.Xaml.DependencyObject)instance, (global::System.Object)Value);
-        }
-        private object get_2_Validation_ValidationProvider(object instance)
+        private object get_1_Validation_ValidationProvider(object instance)
         {
             return global::ValidationV4.Attached.Validation.GetValidationProvider((global::Microsoft.UI.Xaml.DependencyObject)instance);
         }
-        private void set_2_Validation_ValidationProvider(object instance, object Value)
+        private void set_1_Validation_ValidationProvider(object instance, object Value)
         {
             global::ValidationV4.Attached.Validation.SetValidationProvider((global::Microsoft.UI.Xaml.DependencyObject)instance, (global::System.ComponentModel.INotifyDataErrorInfo)Value);
         }
-        private object get_3_Validation_ValidationPropertyName(object instance)
+        private object get_2_Validation_ValidationPropertyName(object instance)
         {
             return global::ValidationV4.Attached.Validation.GetValidationPropertyName((global::Microsoft.UI.Xaml.DependencyObject)instance);
         }
-        private void set_3_Validation_ValidationPropertyName(object instance, object Value)
+        private void set_2_Validation_ValidationPropertyName(object instance, object Value)
         {
             global::ValidationV4.Attached.Validation.SetValidationPropertyName((global::Microsoft.UI.Xaml.DependencyObject)instance, (global::System.String)Value);
         }
-        private object get_4_Validation_Errors(object instance)
+        private object get_3_Validation_Errors(object instance)
         {
             return global::ValidationV4.Attached.Validation.GetErrors((global::Microsoft.UI.Xaml.DependencyObject)instance);
         }
-        private void set_4_Validation_Errors(object instance, object Value)
+        private void set_3_Validation_Errors(object instance, object Value)
         {
             global::ValidationV4.Attached.Validation.SetErrors((global::Microsoft.UI.Xaml.DependencyObject)instance, (global::System.Collections.IEnumerable)Value);
         }
@@ -523,23 +514,14 @@ namespace ValidationV4.ValidationV4_XamlTypeInfo
                 xamlMember.Getter = get_0_XamlControlsResources_UseCompactResources;
                 xamlMember.Setter = set_0_XamlControlsResources_UseCompactResources;
                 break;
-            case "ValidationV4.Attached.Validation.ErrorTemplate":
-                userType = (global::ValidationV4.ValidationV4_XamlTypeInfo.XamlUserType)GetXamlTypeByName("ValidationV4.Attached.Validation");
-                xamlMember = new global::ValidationV4.ValidationV4_XamlTypeInfo.XamlMember(this, "ErrorTemplate", "Object");
-                xamlMember.SetTargetTypeName("Microsoft.UI.Xaml.DependencyObject");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.SetIsAttachable();
-                xamlMember.Getter = get_1_Validation_ErrorTemplate;
-                xamlMember.Setter = set_1_Validation_ErrorTemplate;
-                break;
             case "ValidationV4.Attached.Validation.ValidationProvider":
                 userType = (global::ValidationV4.ValidationV4_XamlTypeInfo.XamlUserType)GetXamlTypeByName("ValidationV4.Attached.Validation");
                 xamlMember = new global::ValidationV4.ValidationV4_XamlTypeInfo.XamlMember(this, "ValidationProvider", "System.ComponentModel.INotifyDataErrorInfo");
                 xamlMember.SetTargetTypeName("Microsoft.UI.Xaml.DependencyObject");
                 xamlMember.SetIsDependencyProperty();
                 xamlMember.SetIsAttachable();
-                xamlMember.Getter = get_2_Validation_ValidationProvider;
-                xamlMember.Setter = set_2_Validation_ValidationProvider;
+                xamlMember.Getter = get_1_Validation_ValidationProvider;
+                xamlMember.Setter = set_1_Validation_ValidationProvider;
                 break;
             case "ValidationV4.Attached.Validation.ValidationPropertyName":
                 userType = (global::ValidationV4.ValidationV4_XamlTypeInfo.XamlUserType)GetXamlTypeByName("ValidationV4.Attached.Validation");
@@ -547,8 +529,8 @@ namespace ValidationV4.ValidationV4_XamlTypeInfo
                 xamlMember.SetTargetTypeName("Microsoft.UI.Xaml.DependencyObject");
                 xamlMember.SetIsDependencyProperty();
                 xamlMember.SetIsAttachable();
-                xamlMember.Getter = get_3_Validation_ValidationPropertyName;
-                xamlMember.Setter = set_3_Validation_ValidationPropertyName;
+                xamlMember.Getter = get_2_Validation_ValidationPropertyName;
+                xamlMember.Setter = set_2_Validation_ValidationPropertyName;
                 break;
             case "ValidationV4.Attached.Validation.Errors":
                 userType = (global::ValidationV4.ValidationV4_XamlTypeInfo.XamlUserType)GetXamlTypeByName("ValidationV4.Attached.Validation");
@@ -556,8 +538,8 @@ namespace ValidationV4.ValidationV4_XamlTypeInfo
                 xamlMember.SetTargetTypeName("Microsoft.UI.Xaml.DependencyObject");
                 xamlMember.SetIsDependencyProperty();
                 xamlMember.SetIsAttachable();
-                xamlMember.Getter = get_4_Validation_Errors;
-                xamlMember.Setter = set_4_Validation_Errors;
+                xamlMember.Getter = get_3_Validation_Errors;
+                xamlMember.Setter = set_3_Validation_Errors;
                 break;
             }
             return xamlMember;

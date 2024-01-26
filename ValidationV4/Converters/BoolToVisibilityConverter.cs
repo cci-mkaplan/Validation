@@ -13,7 +13,7 @@ namespace ValidationV4.Converters
     {
         public object Convert(object value, Type targetType, object parameter, string language)
         {
-            var result = value is not null && ((System.Collections.ICollection)value).Count > 0 ? Visibility.Visible : Visibility.Collapsed;
+            var result = value is IEnumerable<string> errors && errors.Any() ? Visibility.Visible : Visibility.Collapsed;
             return result;
 
         }

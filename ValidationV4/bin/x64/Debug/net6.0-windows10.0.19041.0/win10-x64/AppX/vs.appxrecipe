@@ -29,29 +29,29 @@
     <AppXManifest Include="C:\Users\mkaplanCCI\Desktop\ValidationV4\ValidationV4\bin\x64\Debug\net6.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2024-01-25T13:59:29.230</Modified>
+      <Modified>2024-01-26T08:26:02.473</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\mkaplanCCI\Desktop\ValidationV4\ValidationV4\bin\x64\Debug\net6.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2024-01-25T13:59:29.026</Modified>
+      <Modified>2024-01-26T08:26:02.227</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mkaplanCCI\Desktop\ValidationV4\ValidationV4\bin\x64\Debug\net6.0-windows10.0.19041.0\win10-x64\ValidationV4.runtimeconfig.json">
       <PackagePath>ValidationV4.runtimeconfig.json</PackagePath>
-      <Modified>2024-01-25T12:06:18.294</Modified>
+      <Modified>2024-01-26T08:26:02.060</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mkaplanCCI\Desktop\ValidationV4\ValidationV4\bin\x64\Debug\net6.0-windows10.0.19041.0\win10-x64\ValidationV4.dll">
       <PackagePath>ValidationV4.dll</PackagePath>
-      <Modified>2024-01-25T13:59:28.920</Modified>
+      <Modified>2024-01-26T08:26:01.775</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mkaplanCCI\Desktop\ValidationV4\ValidationV4\obj\x64\Debug\net6.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>ValidationV4.exe</PackagePath>
-      <Modified>2024-01-25T13:59:28.926</Modified>
+      <Modified>2024-01-26T08:26:01.792</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mkaplanCCI\Desktop\ValidationV4\ValidationV4\bin\x64\Debug\net6.0-windows10.0.19041.0\win10-x64\ValidationV4.deps.json">
       <PackagePath>ValidationV4.deps.json</PackagePath>
-      <Modified>2024-01-25T12:06:18.181</Modified>
+      <Modified>2024-01-26T08:26:01.975</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mkaplanCCI\.nuget\packages\microsoft.netcore.app.runtime.win-x64\6.0.15\runtimes\win-x64\lib\net6.0\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -1019,31 +1019,31 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mkaplanCCI\Desktop\ValidationV4\ValidationV4\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
-      <Modified>2024-01-25T12:05:33.550</Modified>
+      <Modified>2024-01-26T08:25:40.431</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mkaplanCCI\Desktop\ValidationV4\ValidationV4\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
-      <Modified>2024-01-25T12:05:33.566</Modified>
+      <Modified>2024-01-26T08:25:40.444</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mkaplanCCI\Desktop\ValidationV4\ValidationV4\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
-      <Modified>2024-01-25T12:05:33.579</Modified>
+      <Modified>2024-01-26T08:25:40.456</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mkaplanCCI\Desktop\ValidationV4\ValidationV4\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
-      <Modified>2024-01-25T12:05:33.593</Modified>
+      <Modified>2024-01-26T08:25:40.472</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mkaplanCCI\Desktop\ValidationV4\ValidationV4\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
-      <Modified>2024-01-25T12:05:33.607</Modified>
+      <Modified>2024-01-26T08:25:40.486</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mkaplanCCI\Desktop\ValidationV4\ValidationV4\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
-      <Modified>2024-01-25T12:05:33.622</Modified>
+      <Modified>2024-01-26T08:25:40.499</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mkaplanCCI\Desktop\ValidationV4\ValidationV4\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
-      <Modified>2024-01-25T12:05:33.635</Modified>
+      <Modified>2024-01-26T08:25:40.514</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
