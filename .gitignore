@@ -1,6 +1,5 @@
-﻿################################################################################
-# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
-################################################################################
-
-/.vs/ProjectEvaluation
-/.vs/ValidationV4/v17/.suo
+﻿*.suo
+*.user
+bin
+obj
+.vs
